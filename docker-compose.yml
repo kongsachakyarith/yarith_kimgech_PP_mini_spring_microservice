@@ -4,6 +4,7 @@ volumes:
   user_data:
   task_data:
   keycloak_data:
+  zipkin_data:
 
 
 x-database-env: &database-env
@@ -28,6 +29,15 @@ x-keycloak-env: &keycloak-env
 
 
 services:
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    volumes:
+      - zipkin_data:/var/lib/postgresql/data
+    container_name: zipkin-server
+
   keycloak-database:
     image: postgres:14.4-alpine
     restart: unless-stopped

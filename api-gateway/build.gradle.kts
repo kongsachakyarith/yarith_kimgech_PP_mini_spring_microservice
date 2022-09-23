@@ -4,18 +4,10 @@ plugins {
     kotlin("plugin.spring")
 }
 
-group = "org.kshrd.cloud"
-version = "1.0.0"
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-}
 
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    implementation ("org.springframework.cloud:spring-cloud-starter-gateway:3.1.1")
+    testImplementation ("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.4")
 }

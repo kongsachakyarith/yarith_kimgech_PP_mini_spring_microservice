@@ -4,18 +4,15 @@ plugins {
     kotlin("plugin.spring")
 }
 
-group = "org.kshrd.cloud"
-version = "1.0.0"
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-}
 
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+// eureka server
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.4")
+    implementation("org.springframework.boot:spring-boot-starter-web")
 }
