@@ -17,7 +17,9 @@ class AppUserRouter(val appUserHandler: AppUserHandler){
         router{
             "/api/v1".nest{
                 GET("/users/{id}",appUserHandler::getAllUserById)
-                GET("/test", appUserHandler::testing)
+                POST("/users",appUserHandler::createAppUser)
+                DELETE("/users/{id}",appUserHandler::deleteUserById)
+//                GET("/test", appUserHandler::testing)
         }
 
         }

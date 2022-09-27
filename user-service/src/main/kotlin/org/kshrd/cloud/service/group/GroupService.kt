@@ -1,4 +1,4 @@
-package org.kshrd.demo.userservice.service.group
+package org.kshrd.cloud.service.group
 
 interface GroupService {
 }

@@ -4,16 +4,17 @@ import org.kshrd.cloud.model.dto.AppUserDto
 import nonapi.io.github.classgraph.json.Id
 import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
-import java.sql.Timestamp
+import java.time.LocalDateTime
 import java.util.UUID
 
 @Table("app_users")
 data class AppUser (
     @Id
-    val id: UUID? = null,
+    @Column("id")
+    val id: Int? = null,
 
     @Column("auth_id")
-    val authId: UUID,
+    val authId: UUID? = null,
 
     @Column("email")
     val email: String,
@@ -31,17 +32,17 @@ data class AppUser (
     val profileImage: String,
 
     @Column("created_date")
-    val createdDate: Timestamp,
+    val createdDate: LocalDateTime,
 
     @Column("last_modified")
-    val lastModified: Timestamp,
+    val lastModified: LocalDateTime,
 
     @Column("is_enabled")
     val isEnabled: Boolean=false
 
     ){
     fun toDto() = AppUserDto(
-        id = id!!,
+        id = authId!!,
         username = username,
         email= email,
         firstName=firstName,

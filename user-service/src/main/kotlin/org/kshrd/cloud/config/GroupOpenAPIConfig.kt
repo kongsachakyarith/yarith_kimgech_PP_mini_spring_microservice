@@ -49,25 +49,25 @@ import org.springframework.web.bind.annotation.RequestMethod
             )
         ),
         // this endpoint is a GET request that takes a path variable and returns an array
-            RouterOperation(
-                path = "/api/v1/users/{id}",
-                method = [RequestMethod.GET],
-                produces = [MediaType.APPLICATION_JSON_VALUE],
-                beanClass = AppUserHandler::class,
-                beanMethod = "getAllUserById",
-                operation = Operation(
-                    operationId = "getAllUserById", parameters = [Parameter(
-                        name = "id",
-                        `in` = ParameterIn.PATH, // use this to accept a path variable
-                        style = ParameterStyle.SIMPLE,
-                        explode = Explode.FALSE,
-                        required = true,
-                    )], responses = [ApiResponse(
-                        responseCode = "200",
-                        content = [Content(array = ArraySchema(schema = Schema(implementation = AppUserDto::class)))]
-                    )]
-                )
-            ),
+        RouterOperation(
+            path = "/api/v1/users/{id}",
+            method = [RequestMethod.GET],
+            produces = [MediaType.APPLICATION_JSON_VALUE],
+            beanClass = AppUserHandler::class,
+            beanMethod = "getAllUserById",
+            operation = Operation(
+                operationId = "getAllUserById", parameters = [Parameter(
+                    name = "id",
+                    `in` = ParameterIn.PATH, // use this to accept a path variable
+                    style = ParameterStyle.SIMPLE,
+                    explode = Explode.FALSE,
+                    required = true,
+                )], responses = [ApiResponse(
+                    responseCode = "200",
+                    content = [Content(array = ArraySchema(schema = Schema(implementation = AppUserDto::class)))]
+                )]
+            )
+        ),
         RouterOperation(
             path = "/api/v1/users/{id}",
             method = [RequestMethod.DELETE],
@@ -89,4 +89,4 @@ import org.springframework.web.bind.annotation.RequestMethod
         ),
     ]
 )
-annotation class AppUserOperations
+annotation class GroupOperations

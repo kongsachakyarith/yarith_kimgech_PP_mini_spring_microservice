@@ -1,4 +1,6 @@
 package org.kshrd.demo.userservice.model.request
 
-class GroupRequest {
-}
+data class GroupRequest (
+    val name: String,
+    val image: String
+        )

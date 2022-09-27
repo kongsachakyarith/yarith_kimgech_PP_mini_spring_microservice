@@ -1,4 +1,7 @@
-package org.kshrd.demo.userservice.service.group
+package org.kshrd.cloud.service.group
 
+import org.springframework.stereotype.Service
+
+@Service
 class GroupServiceImp {
 }

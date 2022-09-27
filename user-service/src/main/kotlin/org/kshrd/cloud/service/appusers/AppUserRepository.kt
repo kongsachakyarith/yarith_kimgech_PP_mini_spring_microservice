@@ -7,6 +7,8 @@ import java.util.UUID
 
 interface AppUserRepository : ReactiveCrudRepository<AppUser,Long> {
 
-    fun findById(appUserId: UUID): Mono<AppUser>
+    fun findAppUserById(appUserId: UUID): Mono<AppUser>
+
+    fun deleteAppUserById(appUserId: UUID):Mono<AppUser>
 
 }

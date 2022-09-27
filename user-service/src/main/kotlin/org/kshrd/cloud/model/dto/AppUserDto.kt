@@ -1,6 +1,7 @@
 package org.kshrd.cloud.model.dto
 
 import java.sql.Timestamp
+import java.time.LocalDateTime
 import java.util.UUID
 
 data class AppUserDto (
@@ -10,8 +11,8 @@ data class AppUserDto (
     val firstName: String,
     val lastName: String,
     val profileImage: String,
-    val createdDate: Timestamp,
-    val lastModified: Timestamp,
+    val createdDate: LocalDateTime,
+    val lastModified: LocalDateTime,
     val isEnabled: Boolean
 
         )
