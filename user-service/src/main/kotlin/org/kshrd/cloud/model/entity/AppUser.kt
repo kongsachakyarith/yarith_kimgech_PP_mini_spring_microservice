@@ -1,6 +1,6 @@
-package com.kshrd.demo.userservice.model.entity
+package org.kshrd.cloud.model.entity
 
-import com.kshrd.demo.userservice.model.dto.AppUserDto
+import org.kshrd.cloud.model.dto.AppUserDto
 import nonapi.io.github.classgraph.json.Id
 import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table

@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.model.entity
+package org.kshrd.demo.userservice.model.entity
 
 import nonapi.io.github.classgraph.json.Id
 import org.springframework.data.relational.core.mapping.Column

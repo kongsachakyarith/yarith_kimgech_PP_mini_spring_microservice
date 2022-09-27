@@ -1,6 +1,4 @@
-package com.kshrd.demo.userservice.model.request
-
-import com.kshrd.demo.userservice.model.entity.AppUser
+package org.kshrd.cloud.model.request
 
 data class AppUserRequest (
     val username: String,

@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.service.group
+package org.kshrd.demo.userservice.service.group
 
 interface GroupService {
 }
