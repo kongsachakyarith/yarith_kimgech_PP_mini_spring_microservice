@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.model.entity
+package org.kshrd.cloud.model.entity
 
 import com.kshrd.demo.userservice.model.dto.AppUserDto
 import nonapi.io.github.classgraph.json.Id

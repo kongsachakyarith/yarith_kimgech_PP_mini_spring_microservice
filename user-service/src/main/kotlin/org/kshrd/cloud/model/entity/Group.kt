@@ -4,8 +4,7 @@ import nonapi.io.github.classgraph.json.Id
 import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
 import java.sql.Timestamp
-
-@Table("groups")
+Table("groups")
 data class Group (
     @Id
     val id: Long? = null,
