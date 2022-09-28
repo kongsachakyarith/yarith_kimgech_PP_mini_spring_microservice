@@ -1,0 +1,18 @@
+server:
+  port: 8008
+spring:
+#  profiles:
+#    active: native
+
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Kimgech/config-server.git
+          default-label: master
+          skip-ssl-validation: true
+
+
+
