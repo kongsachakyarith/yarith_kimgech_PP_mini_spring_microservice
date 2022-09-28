@@ -2,13 +2,18 @@ server:
   port: 8081
 spring:
   application:
-    name: user-server
-  r2dbc:
-    url: r2dbc:pool:postgresql://localhost:7434/user_db
-    username: kimgech
-    password: 123
+    name: user-service
+#  r2dbc:
+#    url: r2dbc:pool:postgresql://localhost:7434/user_db
+#    username: kimgech
+#    password: 123
   main:
     allow-bean-definition-overriding: true
+    web-application-type: reactive
+  config:
+    import: optional:configserver:http://localhost:8008
+  profiles:
+    active: dev
 
   eureka:
     client:

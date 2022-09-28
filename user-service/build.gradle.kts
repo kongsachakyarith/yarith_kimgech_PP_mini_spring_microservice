@@ -26,6 +26,8 @@ dependencies {
 //    implementation ("org.springdoc:springdoc-openapi-ui:1.4.3")
 //    implementation ("org.springdoc:springdoc-openapi-security:1.4.3")
 //    testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    implementation("org.springframework.cloud:spring-cloud-starter-config:3.1.4")
     // eureka client
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.4")
 
