@@ -20,7 +20,7 @@ data class AppUserRequest (
        lastName = lastName,
        createdDate = LocalDateTime.now(),
         lastModified = LocalDateTime.now(),
-        isEnabled = false,
+        isEnabled = true,
         authId = UUID.randomUUID()
     )
 }

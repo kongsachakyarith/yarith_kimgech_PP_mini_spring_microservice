@@ -14,5 +14,6 @@ interface GroupRepository : ReactiveCrudRepository<Group, UUID>{
 
 //     fun findById(id: UUID): Mono<G>
 
+//    fun findMember
 
 }

@@ -19,7 +19,7 @@ class AppUserRouter(val appUserHandler: AppUserHandler){
                 GET("/users/{id}",appUserHandler::getAllUserById)
                 POST("/users",appUserHandler::createAppUser)
                 DELETE("/users/{id}",appUserHandler::deleteUserById)
-//                PUT("")
+                PUT("/users/profile/{id}",appUserHandler::updateUserProfileById)
 //                GET("/test", appUserHandler::testing)
         }
         }

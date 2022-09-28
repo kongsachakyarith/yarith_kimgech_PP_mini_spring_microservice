@@ -38,7 +38,7 @@ data class AppUser (
     val lastModified: LocalDateTime,
 
     @Column("is_enabled")
-    val isEnabled: Boolean=false
+    val isEnabled: Boolean
 
     ){
     fun toDto() = AppUserDto(

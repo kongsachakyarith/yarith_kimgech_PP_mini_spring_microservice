@@ -2,7 +2,9 @@ package org.kshrd.cloud.service.group
 
 import org.kshrd.cloud.model.dto.AppUserDto
 import org.kshrd.cloud.model.dto.GroupDto
+import org.kshrd.cloud.model.dto.MemberDto
 import org.kshrd.cloud.model.request.GroupRequest
+import org.kshrd.cloud.model.request.MemberRequest
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
@@ -24,5 +26,13 @@ class GroupServiceImp(val groupRepository: GroupRepository) : GroupService {
         return groupRepository.save(groupRequest.toEntity())
             .map { it.toDto() }
     }
+
+//    override fun findGroupMemberByGroupId(id: UUID): Mono<AppUserDto> {
+//        return groupRepository.fin
+//    }
+
+//    override fun createGroupMember(memberRequest: MemberRequest): Mono<MemberDto> {
+//        return groupRepository.save(memberRequest.toEntity()).map { it.toDto() }
+//    }
 
 }

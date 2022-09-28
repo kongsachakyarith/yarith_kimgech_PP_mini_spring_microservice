@@ -1,5 +1,7 @@
 package org.kshrd.cloud.model.entity
 
+import nonapi.io.github.classgraph.json.Id
+import org.kshrd.cloud.model.dto.MemberDto
 import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
 import java.time.LocalDateTime
@@ -7,6 +9,8 @@ import java.util.UUID
 
 @Table("group_members")
 data class GroupMember (
+
+    @Id
     @Column("group_id")
     val groupId: UUID,
 
@@ -18,4 +22,11 @@ data class GroupMember (
 
     @Column("date_added")
     val dateAdded: LocalDateTime
-        )
+        ){
+    fun toDto() = MemberDto(
+    groupId=groupId,
+        userId=userId,
+        addedBy=addedBy,
+        dateAdded=dateAdded
+    )
+}

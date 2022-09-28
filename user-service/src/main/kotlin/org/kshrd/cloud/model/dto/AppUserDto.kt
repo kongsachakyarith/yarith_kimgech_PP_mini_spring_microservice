@@ -17,6 +17,5 @@ data class AppUserDto (
         )
 
 data class Response(
-    val message: String,
-    val status: String
+    val message: String
 )
