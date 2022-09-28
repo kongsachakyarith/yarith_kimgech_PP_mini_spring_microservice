@@ -1,15 +1,21 @@
 server:
   port: 8082
 spring:
+  zipkin:
+    base-url: http://localhost:9411
   application:
-    name: task-server
-  r2dbc:
-    url: r2dbc:pool:postgresql://localhost:7433/task_db
-    username: kimgech
-    password: 123
+    name: task-service
+#  r2dbc:
+#    url: r2dbc:pool:postgresql://localhost:7433/task_db
+#    username: kimgech
+#    password: 123
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: reactive
   config:
-    import: optional:configserver:http://localhost:8888
-
+    import: optional:configserver:http://localhost:8008
+  profiles:
+    active: dev
 eureka:
   client:
     fetch-registry: true

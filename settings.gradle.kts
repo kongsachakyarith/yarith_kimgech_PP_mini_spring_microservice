@@ -7,7 +7,5 @@ include("keycloak-client-server")
 include("api-gateway")
 include("config-server")
 include("config-server1")
-include("config-server")
-include("config-server")
-include("config-server")
 include("config")
+
