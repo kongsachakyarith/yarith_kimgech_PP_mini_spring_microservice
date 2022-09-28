@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.model.request
+package org.kshrd.demo.userservice.model.request
 
 class GroupRequest {
 }

@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.model.dto
+package org.kshrd.demo.userservice.model.dto
 
 import java.util.UUID
 

@@ -1,8 +1,6 @@
-package com.kshrd.demo.userservice.model.dto
+package org.kshrd.cloud.model.dto
 
-import jdk.jfr.Enabled
 import java.sql.Timestamp
-import java.util.TimeZone
 import java.util.UUID
 
 data class AppUserDto (

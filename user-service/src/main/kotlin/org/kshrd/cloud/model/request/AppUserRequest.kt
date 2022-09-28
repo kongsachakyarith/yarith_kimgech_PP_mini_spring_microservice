@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.model.request
+package org.kshrd.cloud.model.request
 
 data class AppUserRequest (
     val username: String,

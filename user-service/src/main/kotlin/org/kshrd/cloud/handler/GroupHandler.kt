@@ -1,4 +1,4 @@
-package com.kshrd.demo.userservice.handler
+package org.kshrd.demo.userservice.handler
 
 class GroupHandler {
 }
