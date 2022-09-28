@@ -13,6 +13,9 @@ import io.swagger.v3.oas.annotations.media.Schema
 import io.swagger.v3.oas.annotations.parameters.RequestBody
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import org.kshrd.cloud.handler.AppUserHandler
+import org.kshrd.cloud.handler.GroupHandler
+import org.kshrd.cloud.model.dto.GroupDto
+import org.kshrd.cloud.model.request.GroupRequest
 import org.springdoc.core.annotations.RouterOperation
 import org.springdoc.core.annotations.RouterOperations
 import org.springframework.http.MediaType
@@ -90,3 +93,75 @@ import org.springframework.web.bind.annotation.RequestMethod
     ]
 )
 annotation class AppUserOperations
+
+@RouterOperations(
+    value = [
+        RouterOperation(
+            path = "/api/v1/groups",
+            method = [RequestMethod.GET],
+            produces = [MediaType.APPLICATION_JSON_VALUE],
+            beanClass = GroupHandler::class,
+            beanMethod = "getAllGroups",
+            operation = Operation(
+                operationId = "getAllGroups", responses = [ApiResponse(
+                    content = [Content(array = ArraySchema(schema = Schema(implementation = GroupDto::class)))]
+                )]
+            )
+        ),
+        // this endpoint is a POST request with a request body and returns an object
+        RouterOperation(
+            path = "/api/v1/groups",
+            method = [RequestMethod.POST],
+            produces = [MediaType.APPLICATION_JSON_VALUE],
+            beanClass = GroupHandler::class,
+            beanMethod = "createGroup",
+            operation = Operation(
+                operationId = "createGroup",
+                requestBody = RequestBody(content = [Content(schema = Schema(implementation = GroupRequest::class))]),
+                responses = [ApiResponse(
+                    responseCode = "200", content = [Content(schema = Schema(implementation = GroupDto::class))]
+                )]
+            )
+        ),
+        // this endpoint is a GET request that takes a path variable and returns an array
+        RouterOperation(
+            path = "/api/v1/groups/{id}",
+            method = [RequestMethod.GET],
+            produces = [MediaType.APPLICATION_JSON_VALUE],
+            beanClass = GroupHandler::class,
+            beanMethod = "findById",
+            operation = Operation(
+                operationId = "findById", parameters = [Parameter(
+                    name = "id",
+                    `in` = ParameterIn.PATH, // use this to accept a path variable
+                    style = ParameterStyle.SIMPLE,
+                    explode = Explode.FALSE,
+                    required = true,
+                )], responses = [ApiResponse(
+                    responseCode = "200",
+                    content = [Content(array = ArraySchema(schema = Schema(implementation = GroupDto::class)))]
+                )]
+            )
+        ),
+//        RouterOperation(
+//            path = "/api/v1/users/{id}",
+//            method = [RequestMethod.DELETE],
+//            produces = [MediaType.APPLICATION_JSON_VALUE],
+//            beanClass = AppUserHandler::class,
+//            beanMethod = "deleteUserById",
+//            operation = Operation(
+//                operationId = "deleteUserById", parameters = [Parameter(
+//                    name = "id",
+//                    `in` = ParameterIn.PATH, // use this to accept a path variable
+//                    style = ParameterStyle.SIMPLE,
+//                    explode = Explode.FALSE,
+//                    required = true,
+//                )], responses = [ApiResponse(
+//                    responseCode = "200",
+//                    content = [Content(array = ArraySchema(schema = Schema(implementation = AppUserDto::class)))]
+//                )]
+//            )
+//        ),
+    ]
+)
+annotation class GroupOperations

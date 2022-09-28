@@ -10,7 +10,7 @@ import org.springframework.web.reactive.function.server.router
 
 @Configuration
 class AppUserRouter(val appUserHandler: AppUserHandler){
-//
+
     @Bean
     @AppUserOperations
     fun userRouter(): RouterFunction<ServerResponse> =
@@ -19,9 +19,9 @@ class AppUserRouter(val appUserHandler: AppUserHandler){
                 GET("/users/{id}",appUserHandler::getAllUserById)
                 POST("/users",appUserHandler::createAppUser)
                 DELETE("/users/{id}",appUserHandler::deleteUserById)
+//                PUT("")
 //                GET("/test", appUserHandler::testing)
         }
-
         }
 
 }

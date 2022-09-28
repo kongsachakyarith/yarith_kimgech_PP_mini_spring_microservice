@@ -2,7 +2,7 @@ package org.kshrd.cloud.model.request
 
 import java.util.UUID
 
-data class GroupMemberRequest (
+data class MemberRequest (
     val groupId: UUID,
     val userId: UUID
         )

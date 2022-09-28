@@ -11,4 +11,5 @@ interface AppUserRepository : ReactiveCrudRepository<AppUser,Long> {
 
     fun deleteAppUserById(appUserId: UUID):Mono<AppUser>
 
+//    fun
 }

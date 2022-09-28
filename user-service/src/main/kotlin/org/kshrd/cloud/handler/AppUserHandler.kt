@@ -13,7 +13,6 @@ import java.util.*
 @Component
 class AppUserHandler(val appUserService: AppUserService){
 
-
     fun getAllUserById(req:ServerRequest): Mono<ServerResponse> {
         val appUserId = UUID.fromString(req.pathVariable("id"))
        return ServerResponse.ok().body(appUserService.findByUserId(appUserId), AppUserDto::class.java)

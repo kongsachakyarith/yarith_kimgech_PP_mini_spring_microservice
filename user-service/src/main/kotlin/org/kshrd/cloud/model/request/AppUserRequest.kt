@@ -1,7 +1,6 @@
 package org.kshrd.cloud.model.request
 
 import org.kshrd.cloud.model.entity.AppUser
-import java.sql.Timestamp
 import java.time.LocalDateTime
 import java.util.UUID
 

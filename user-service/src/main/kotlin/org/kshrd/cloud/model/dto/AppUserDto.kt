@@ -1,6 +1,5 @@
 package org.kshrd.cloud.model.dto
 
-import java.sql.Timestamp
 import java.time.LocalDateTime
 import java.util.UUID
 
@@ -16,3 +15,8 @@ data class AppUserDto (
     val isEnabled: Boolean
 
         )
+
+data class Response(
+    val message: String,
+    val status: String
+)

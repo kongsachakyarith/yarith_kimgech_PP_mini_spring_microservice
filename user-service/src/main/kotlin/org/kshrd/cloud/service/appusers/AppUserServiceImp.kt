@@ -2,6 +2,7 @@ package org.kshrd.cloud.service.appusers
 
 import org.kshrd.cloud.model.dto.AppUserDto
 import org.kshrd.cloud.model.entity.AppUser
+import org.kshrd.cloud.model.request.AppUserProfileRequest
 import org.kshrd.cloud.model.request.AppUserRequest
 import org.springframework.cloud.client.loadbalancer.Response
 import org.springframework.stereotype.Service
@@ -23,4 +24,8 @@ class AppUserServiceImp(val appUserRepository: AppUserRepository): AppUserServic
     override fun deleteById(id: UUID): Mono<AppUser> {
         return appUserRepository.deleteAppUserById(id)
     }
+
+//    override fun updateById(appUserProfileRequest: AppUserProfileRequest, id: UUID): Mono<AppUserDto> {
+//        return appUserRepository.
+//    }
 }
