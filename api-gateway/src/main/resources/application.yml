@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 spring:
   application:
     name: gateway-service
@@ -7,30 +8,41 @@ spring:
     import: optional:configserver:http://localhost:8008
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: user-service
           uri: lb://USER-SERVICE
-#          uri: http://localhost:8081
           predicates:
-            - Path=/api/v1/users/**
+            - Path=/api/v1/users/**,/api/v1/groups/**
 
         - id: task-service
           uri: lb://TASK-SERVICE
-#          uri: http://localhost:8082
           predicates:
             - Path=/api/v1/tasks/**
 
         - id: user-service-openapi
           uri: lb://USER-SERVICE
-            #          uri: http://localhost:8081
           predicates:
-            - Path=users/**
+            - Path=/users/**
+          filters:
+            - RewritePath=/users/(?<path>.*), /$\{path}
 
         - id: task-service-openapi
           uri: lb://TASK-SERVICE
-                #          uri: http://localhost:8082
           predicates:
             - Path=/tasks/**
+          filters:
+            - RewritePath=/tasks/(?<path>.*), /$\{path}
+
+        - id: openapi
+          uri: http://localhost:${server.port}
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
+
 eureka:
   client:
     fetch-registry: true
@@ -42,6 +54,6 @@ springdoc:
   swagger-ui:
     urls:
       - name: users
-        url: /users/v3/api-docs
+        url: /v3/api-docs/users
       - name: tasks
-        url: /tasks/v3/api-docs
+        url: /v3/api-docs/tasks

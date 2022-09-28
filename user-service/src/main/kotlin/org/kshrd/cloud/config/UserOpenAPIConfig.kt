@@ -153,10 +153,24 @@ annotation class AppUserOperations
             )
         ),
         RouterOperation(
+            path = "/api/v1/groups/members",
+            method = [RequestMethod.POST],
+            produces = [MediaType.APPLICATION_JSON_VALUE],
+            beanClass = GroupHandler::class,
+            beanMethod = "createMemberGroup",
+            operation = Operation(
+                operationId = "createMemberGroup",
+                requestBody = RequestBody(content = [Content(schema = Schema(implementation = MemberRequest::class))]),
+                responses = [ApiResponse(
+                    responseCode = "200", content = [Content(schema = Schema(implementation = MemberDto::class))]
+                )]
+            )
+        ),
+        RouterOperation(
             path = "/api/v1/groups/{id}/users",
             method = [RequestMethod.GET],
             produces = [MediaType.APPLICATION_JSON_VALUE],
-            beanClass = AppUserHandler::class,
+            beanClass = GroupHandler::class,
             beanMethod = "findGroupMember",
             operation = Operation(
                 operationId = "findGroupMember", parameters = [Parameter(
@@ -168,20 +182,6 @@ annotation class AppUserOperations
                 )], responses = [ApiResponse(
                     responseCode = "200",
                     content = [Content(array = ArraySchema(schema = Schema(implementation = AppUserDto::class)))]
-                )]
-            )
-        ),
-        RouterOperation(
-            path = "/api/v1/groups/members",
-            method = [RequestMethod.POST],
-            produces = [MediaType.APPLICATION_JSON_VALUE],
-            beanClass = GroupHandler::class,
-            beanMethod = "createMemberGroup",
-            operation = Operation(
-                operationId = "createMemberGroup",
-                requestBody = RequestBody(content = [Content(schema = Schema(implementation = MemberRequest::class))]),
-                responses = [ApiResponse(
-                    responseCode = "200", content = [Content(schema = Schema(implementation = MemberDto::class))]
                 )]
             )
         ),

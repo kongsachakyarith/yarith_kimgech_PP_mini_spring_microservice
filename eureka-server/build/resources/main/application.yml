@@ -1,4 +1,6 @@
 spring:
+  zipkin:
+    base-url: http://localhost:9411
   application:
     name: registry-server
     # Simply telling Eureka server to NOT fetch or register to any server since it's not a client.
