@@ -20,9 +20,9 @@ interface AppUserRepository : ReactiveCrudRepository<AppUser,Int> {
             "returning * ")
     fun updateById(id: UUID, username: String, profileImage: String, firstName: String, lastName: String) : Mono<AppUser>
 
-    @Query(value = "select id from app_users where auth_id = :id")
-    fun findUserIdById(id: UUID): Mono<Int>
-
+//    @Query(value = "select id from app_users where auth_id = :id")
+//    fun findUserIdById(id: UUID): Mono<Int>
+//
     @Query(value = "select app_users.* from app_users"
             +"inner join group_members on group_members.user_id = app_users.id"
             +"where group_members.group_id = id :id")

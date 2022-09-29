@@ -10,9 +10,8 @@ import org.springframework.cloud.config.server.EnableConfigServer
 class ConfigServerApplication {
 }
 
-fun main(array: Array<String>){
+fun main(args: Array<String>){
     runApplication<ConfigServerApplication>(
-        *array
+        *args
     )
-    println("config-server")
 }

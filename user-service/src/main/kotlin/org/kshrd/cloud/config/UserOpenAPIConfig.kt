@@ -33,6 +33,7 @@ import org.springframework.web.bind.annotation.RequestMethod
             beanClass = AppUserHandler::class,
             beanMethod = "updateUserProfileById",
             operation = Operation(
+                requestBody = RequestBody(content = [Content(schema = Schema(implementation = AppUserRequest::class))]),
                 operationId = "updateUserProfileById", parameters = [Parameter(
                     name = "id",
                     `in` = ParameterIn.PATH, // use this to accept a path variable

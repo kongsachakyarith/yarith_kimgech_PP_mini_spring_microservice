@@ -13,7 +13,7 @@ import java.util.*
 class GroupMemberServiceImp(val groupMemberRepository: GroupMemberRepository, val appUserRepository: AppUserRepository): GroupMemberService {
 
     override fun createGroupMember(memberRequest: MemberRequest): Mono<MemberDto> {
-        val userId = appUserRepository.findUserIdById(memberRequest.userId)
+        val userId = groupMemberRepository.findUserIdById(memberRequest.userId)
         val group = userId
             .flatMap {
                 groupMemberRepository.save(memberRequest.toEntity(it))
