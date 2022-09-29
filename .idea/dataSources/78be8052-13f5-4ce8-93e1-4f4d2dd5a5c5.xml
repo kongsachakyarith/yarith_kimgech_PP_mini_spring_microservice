@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="user_db@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.38">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>mdy</DateStyle>
       <Grants>1||-9223372036854775808|c|G
@@ -4541,7 +4541,6 @@ true posixrules
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
     <key id="305" parent="275" name="app_users_pkey">
-      <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16405</ObjectId>
       <Primary>1</Primary>
@@ -4549,14 +4548,12 @@ true posixrules
       <UnderlyingIndexId>16404</UnderlyingIndexId>
     </key>
     <key id="306" parent="275" name="app_users_email_key">
-      <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16407</ObjectId>
       <StateNumber>739</StateNumber>
       <UnderlyingIndexId>16406</UnderlyingIndexId>
     </key>
     <key id="307" parent="275" name="app_users_username_key">
-      <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16409</ObjectId>
       <StateNumber>739</StateNumber>
@@ -4597,7 +4594,6 @@ true posixrules
       <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <RefKeyName>groups_pkey</RefKeyName>
       <StateNumber>741</StateNumber>
       <RefTableId>16410</RefTableId>
       <RefTableName>groups</RefTableName>
@@ -4610,7 +4606,6 @@ true posixrules
       <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <RefKeyName>app_users_pkey</RefKeyName>
       <StateNumber>741</StateNumber>
       <RefTableId>16397</RefTableId>
       <RefTableName>app_users</RefTableName>
@@ -4623,7 +4618,6 @@ true posixrules
       <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <RefKeyName>app_users_pkey</RefKeyName>
       <StateNumber>741</StateNumber>
       <RefTableId>16397</RefTableId>
       <RefTableName>app_users</RefTableName>
@@ -4640,8 +4634,6 @@ user_id</ColNames>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="316" parent="276" name="group_members_pkey">
-      <ColNames>group_id
-user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16423</ObjectId>
       <Primary>1</Primary>
@@ -4687,7 +4679,6 @@ user_id</ColNames>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="322" parent="277" name="groups_pkey">
-      <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16417</ObjectId>
       <Primary>1</Primary>

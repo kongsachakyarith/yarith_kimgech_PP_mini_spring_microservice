@@ -11,7 +11,7 @@ import java.util.*
 
 interface TaskService {
 
-    fun findByGroupId(groupId: UUID, assignedTo: UUID): Mono<TaskDto>
+    fun findByGroupId(groupId: UUID, assignedTo: UUID): Mono<Task>
 
     fun deleteTaskById(taskId: UUID) : Mono<Response>
 

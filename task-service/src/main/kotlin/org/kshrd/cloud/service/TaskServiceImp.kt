@@ -16,44 +16,9 @@ class TaskServiceImp (val taskRepository: TaskRepository,
                       @Qualifier("AppUser") val assignedTo: WebClient): TaskService {
 
 
-    override fun findByGroupId(groupId: UUID, assignedId: UUID): Mono<TaskDto> {
-
-
-        val taskMono = taskRepository.findByGroupIdAndAssignedTo(groupId,assignedId).map { it.toDto() }
-
-        val createdByd = assignedTo.get()
-            .uri("/api/v1/users/{id}", "3986fced-4424-4825-9912-589e626e53b3")
-            .retrieve()
-            .bodyToMono(AppUser::class.java)
-
-        val taskGetAll = taskMono.zipWith(createdByd)
-            .map {
-                val task = it.t1
-                val createdBy = it.t2
-                val taskResponse = task
-                taskResponse.createBy = createdBy
-                taskResponse
-            }
-
-        val assignedToMono = assignedTo.get()
-            .uri("/api/v1/users/{id}",assignedId )
-            .retrieve()
-            .bodyToMono(AppUser::class.java)
-
-
-        val taskCreatedByAssignedToMono = taskGetAll.zipWith(assignedToMono)
-            .map {
-                val taskCreatedBy = it.t1
-                val assignedTo = it.t2
-                val taskCreatedByResponse = taskCreatedBy
-                taskCreatedByResponse.assignedTo = assignedTo
-                taskCreatedByResponse
-            }
-
-        return taskCreatedByAssignedToMono
-
+    override fun findByGroupId(groupId: UUID, assignedTo: UUID): Mono<Task> {
+        return taskRepository.findByGroupIdAndAssignedTo(groupId,assignedTo)
     }
-
 
 
     override fun deleteTaskById(taskId: UUID): Mono<Response> {

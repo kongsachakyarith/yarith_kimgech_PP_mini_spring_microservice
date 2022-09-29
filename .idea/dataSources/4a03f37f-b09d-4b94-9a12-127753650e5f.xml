@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="task_db@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.38">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>mdy</DateStyle>
       <Grants>1||-9223372036854775808|c|G
@@ -4467,7 +4467,6 @@ true posixrules
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
     <key id="295" parent="275" name="task_status_pkey">
-      <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16402</ObjectId>
       <Primary>1</Primary>
@@ -4475,7 +4474,6 @@ true posixrules
       <UnderlyingIndexId>16401</UnderlyingIndexId>
     </key>
     <key id="296" parent="275" name="task_status_name_key">
-      <ColNames>name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16404</ObjectId>
       <StateNumber>739</StateNumber>
@@ -4550,7 +4548,6 @@ true posixrules
       <ObjectId>16413</ObjectId>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <RefKeyName>task_status_pkey</RefKeyName>
       <StateNumber>743</StateNumber>
       <RefTableId>16397</RefTableId>
       <RefTableName>task_status</RefTableName>
@@ -4566,7 +4563,6 @@ true posixrules
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="308" parent="276" name="tasks_pkey">
-      <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16412</ObjectId>
       <Primary>1</Primary>
