@@ -6,6 +6,6 @@ include("eureka-server")
 include("keycloak-client-server")
 include("api-gateway")
 include("config-server")
-include("config-server1")
-include("config")
+//include("config-server1")
+//include("config")
 

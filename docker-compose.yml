@@ -121,3 +121,41 @@ services:
       POSTGRES_PASSWORD: 123
     volumes:
       - task_data:/var/lib/postgresql/data
+
+
+  eureka-server:
+#    image: eureka-server:latest
+    build:
+      context: .
+      dockerfile: eureka.Dockerfile
+    ports:
+      - "8761:8761"
+#    networks:
+#      - backend
+#    eureka-client-a:
+#      image: eureka-client-a:latest
+#      environment:
+#        EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://eureka-server:8761/eureka"
+#      ports:
+#        - "8081:8081"
+#      networks:
+#        - backend
+#    eureka-client-b:
+#      image: eureka-client-b:latest
+#      environment:
+#        EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://eureka-server:8761/eureka"
+#      ports:
+#        - "8082:8082"
+  config-server:
+    build:
+      context: .
+      dockerfile: configserver.Dockerfile
+    ports:
+      - "8008:8008"
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: apigateway.Dockerfile
+    ports:
+      - "8080:8080"
