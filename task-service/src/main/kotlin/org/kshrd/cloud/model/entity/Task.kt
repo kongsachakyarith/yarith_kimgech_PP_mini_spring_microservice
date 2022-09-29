@@ -19,7 +19,7 @@ data class Task (
     @Column("description")
     val description: String,
 
-    @Column("create_by")
+    @Column("created_by")
     val createBy: UUID?=null,
 
     @Column("assigned_to")
