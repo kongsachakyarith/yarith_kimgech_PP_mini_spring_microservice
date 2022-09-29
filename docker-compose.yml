@@ -6,6 +6,8 @@ volumes:
   keycloak_data:
   zipkin_data:
 
+networks:
+  service:
 
 x-database-env: &database-env
   POSTGRES_DB: keycloak
@@ -124,6 +126,7 @@ services:
 
 
   eureka-server:
+    container_name: eureka-server
 #    image: eureka-server:latest
     build:
       context: .
@@ -147,6 +150,7 @@ services:
 #      ports:
 #        - "8082:8082"
   config-server:
+    container_name: config-server
     build:
       context: .
       dockerfile: configserver.Dockerfile
@@ -154,8 +158,43 @@ services:
       - "8008:8008"
 
   api-gateway:
+    container_name: api-gateway
     build:
       context: .
       dockerfile: apigateway.Dockerfile
     ports:
       - "8080:8080"
+
+  task-service:
+    build:
+      context: .
+      dockerfile: task.Dockerfile
+    container_name: task-service
+    depends_on:
+      - task-database
+    environment:
+      - SPRING_DATASOURCE_URL=r2dbc:pool:postgresql://localhost:7433/task_db
+      - SPRING_DATASOURCE_USERNAME=kimgech
+      - SPRING_DATASOURCE_PASSWORD=123
+    ports:
+      - '8082:8082'
+#    networks:
+#      - service
+
+
+  user-service:
+    build:
+      context: .
+      dockerfile: user.Dockerfile
+    container_name: user-service
+    depends_on:
+      - user-database
+    environment:
+      - SPRING_DATASOURCE_URL=r2dbc:pool:postgresql://localhost:7434/user_db
+      - SPRING_DATASOURCE_USERNAME=kimgech
+      - SPRING_DATASOURCE_PASSWORD=123
+    ports:
+      - '8081:8081'
+#    networks:
+#      - service
+

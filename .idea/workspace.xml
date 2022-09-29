@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08abecce-c95b-4341-85c4-a0805ddf4a4b" name="Changes" comment="m">
+      <change afterPath="$PROJECT_DIR$/task.Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user.Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e61b5c1-dc2d-4f32-ab22-032b1d8c06ee.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e61b5c1-dc2d-4f32-ab22-032b1d8c06ee/storage_v2/_src_/database/task_db.eJFfpA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e61b5c1-dc2d-4f32-ab22-032b1d8c06ee/storage_v2/_src_/database/task_db.eJFfpA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e61b5c1-dc2d-4f32-ab22-032b1d8c06ee/storage_v2/_src_/database/task_db.eJFfpA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e61b5c1-dc2d-4f32-ab22-032b1d8c06ee/storage_v2/_src_/database/task_db.eJFfpA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4a03f37f-b09d-4b94-9a12-127753650e5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4a03f37f-b09d-4b94-9a12-127753650e5f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b695a929-4617-427b-9ecc-9a30cbd81354.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b695a929-4617-427b-9ecc-9a30cbd81354/storage_v2/_src_/database/user_db.cu069w.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b695a929-4617-427b-9ecc-9a30cbd81354/storage_v2/_src_/database/user_db.cu069w/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b695a929-4617-427b-9ecc-9a30cbd81354/storage_v2/_src_/database/user_db.cu069w/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b695a929-4617-427b-9ecc-9a30cbd81354/storage_v2/_src_/database/user_db.cu069w/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/kotlin/com/ksga/service/config/ConfigServerApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/configserver.Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,18 +63,18 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring-microservice-demo" type="f1a62948:ProjectNode" />
-                <item name="config-server" type="2d1252cf:ModuleNode" />
+                <item name="api-gateway" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring-microservice-demo" type="f1a62948:ProjectNode" />
-                <item name="config-server" type="2d1252cf:ModuleNode" />
+                <item name="api-gateway" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring-microservice-demo" type="f1a62948:ProjectNode" />
-                <item name="config-server" type="2d1252cf:ModuleNode" />
+                <item name="api-gateway" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -158,11 +145,53 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.api-gateway: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.user-service: Compose Deployment">
+    <configuration name="yarith_kimgech_PP_mini_spring_microservice:api-gateway [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-gateway" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="yarith_kimgech_PP_mini_spring_microservice:config-server [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="yarith_kimgech_PP_mini_spring_microservice:eureka-server [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -236,38 +265,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml.api-gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.user-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="api-gateway" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.config-server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="config-server" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.eureka-server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="eureka-server" />
+              <option value="user-service" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -277,10 +280,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.config-server: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.eureka-server: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.user-service: Compose Deployment" />
+        <item itemvalue="Gradle.yarith_kimgech_PP_mini_spring_microservice:api-gateway [build]" />
         <item itemvalue="Gradle.yarith_kimgech_PP_mini_spring_microservice:config-server [build]" />
+        <item itemvalue="Gradle.yarith_kimgech_PP_mini_spring_microservice:eureka-server [build]" />
         <item itemvalue="Gradle.yarith_kimgech_PP_mini_spring_microservice:user-service [build]" />
       </list>
     </recent_temporary>
@@ -301,7 +304,7 @@
       <workItem from="1664346527030" duration="854000" />
       <workItem from="1664350140289" duration="1910000" />
       <workItem from="1664421626337" duration="13802000" />
-      <workItem from="1664451130358" duration="1558000" />
+      <workItem from="1664451130358" duration="4178000" />
     </task>
     <task id="LOCAL-00001" summary="merge task">
       <created>1664383691566</created>
