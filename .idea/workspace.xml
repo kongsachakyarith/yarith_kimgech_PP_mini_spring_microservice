@@ -296,7 +296,7 @@
       <workItem from="1664350140289" duration="1910000" />
       <workItem from="1664421626337" duration="13802000" />
       <workItem from="1664451130358" duration="5102000" />
-      <workItem from="1664461998092" duration="478000" />
+      <workItem from="1664461998092" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="merge task">
       <created>1664383691566</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664456194062</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="error deploy api">
+      <created>1664462741489</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664462741489</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
