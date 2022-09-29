@@ -14,16 +14,11 @@ class TaskRouter(val taskHandler: TaskHandler){
     fun tasksRouter(): RouterFunction<ServerResponse> =
         router{
             "/api/v1".nest{
-                GET("/tasks/{groupId}",taskHandler::getAllTaskById)
+                GET("/tasks",taskHandler::getAllTaskById)
                 POST("/tasks", taskHandler::createTask)
-                DELETE("/tasks/{taskId}", taskHandler::deleteTaskById)
+                DELETE("/tasks/{id}", taskHandler::deleteTaskById)
             }
 
         }
 
 }
-//class TaskRouter {
-//    @Configuration
-//    @TaskOperations
-//
-//}

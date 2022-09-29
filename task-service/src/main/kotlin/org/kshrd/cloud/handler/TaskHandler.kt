@@ -9,13 +9,22 @@ import org.springframework.web.reactive.function.server.ServerRequest
 import org.springframework.web.reactive.function.server.ServerResponse
 import reactor.core.publisher.Mono
 import java.util.*
+import javax.validation.constraints.Email
+
+data class AppUser(
+    val id: UUID,
+    val username : String,
+    val email: String,
+    val firstName: String,
+    val lastName: String
+)
 
 @Component
 class TaskHandler(private val taskService: TaskService) {
     fun getAllTaskById(req: ServerRequest): Mono<ServerResponse> {
-        val TaskId = UUID.fromString(req.pathVariable("id"))
-
-        return ServerResponse.ok().body(taskService.findByGroupId(TaskId), TaskDto::class.java)
+        val group = UUID.fromString(req.pathVariable("group"))
+        val assignedTo = UUID.fromString(req.pathVariable("assignedTo"))
+        return ServerResponse.ok().body(taskService.findByGroupId(group, assignedTo), TaskDto::class.java)
 
     }
 
@@ -26,7 +35,7 @@ class TaskHandler(private val taskService: TaskService) {
     }
 
     fun deleteTaskById(req: ServerRequest): Mono<ServerResponse>{
-        val id = UUID.fromString(req.pathVariable("taskId"))
+        val id = UUID.fromString(req.pathVariable("id"))
         return ServerResponse.ok().body(taskService.deleteTaskById(id), Task::class.java)
     }
 }
