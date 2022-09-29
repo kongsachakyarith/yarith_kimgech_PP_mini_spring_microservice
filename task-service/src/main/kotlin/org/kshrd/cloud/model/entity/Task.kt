@@ -39,10 +39,10 @@ data class Task (
         id = id!!,
         title = title,
         description = description,
-        createBy = createBy,
+//        createBy = null,
         createdDate = createdDate,
         lastModified = lastModified,
-        assignedTo = assignedTo,
+        assignedTo = null,
         groupId = groupId,
     )
 }
