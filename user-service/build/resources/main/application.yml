@@ -14,7 +14,7 @@ spring:
     allow-bean-definition-overriding: true
     web-application-type: reactive
   config:
-    import: optional:configserver:http://localhost:8008
+    import: optional:configserver:http://localhost:8008/
   profiles:
     active: dev
 

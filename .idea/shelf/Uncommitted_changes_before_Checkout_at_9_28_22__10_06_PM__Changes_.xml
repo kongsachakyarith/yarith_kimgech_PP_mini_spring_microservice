@@ -1,0 +1,129 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]" date="1664377571308" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 9/28/22, 10:06 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/proto.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/file-to-id.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/class-fq-name-to-source.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/lookups.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/file-to-id.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/source-to-output.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/id-to-file.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/internal-name-to-source.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/last-build.bin" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/last-build.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/last-build.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/class-attributes.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/source-to-output.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/id-to-file.tab.len" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/id-to-file.tab_i" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/local-state/build-history.bin" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/local-state/build-history.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/build-history.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/class-attributes.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/id-to-file.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/proto.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/source-to-classes.tab.values.at" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/lookups.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/id-to-file.tab.keystream" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/id-to-file.tab.keystream.len" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/source-to-classes.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/internal-name-to-source.tab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/outputFiles.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" />
+    <option name="AFTER_PATH" value="user-service/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_22,_10_06_PM_[Changes]/class-fq-name-to-source.tab.values.at" />
+  </binary>
+</changelist>

@@ -48,3 +48,11 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: users
+        url: /v3/api-docs/users
+      - name: tasks
+        url: /v3/api-docs/tasks

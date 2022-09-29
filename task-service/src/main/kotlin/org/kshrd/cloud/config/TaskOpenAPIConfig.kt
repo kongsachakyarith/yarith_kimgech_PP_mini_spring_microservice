@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMethod
         value = [
 
             RouterOperation(
-                path = "/api/v1/task",
+                path = "/api/v1/tasks",
                 method = [RequestMethod.POST],
                 produces = [MediaType.APPLICATION_JSON_VALUE],
                 beanClass = TaskHandler::class,
@@ -60,9 +60,9 @@ import org.springframework.web.bind.annotation.RequestMethod
                 method = [RequestMethod.GET],
                 produces = [MediaType.APPLICATION_JSON_VALUE],
                 beanClass = TaskHandler::class,
-                beanMethod = "getAllTaskByGroupId",
+                beanMethod = "getAllTaskById",
                 operation = Operation(
-                    operationId = "getAllTaskByGroupId", parameters = [Parameter(
+                    operationId = "getAllTaskById", parameters = [Parameter(
                         name = "id",
                         `in` = ParameterIn.PATH, // use this to accept a path variable
                         style = ParameterStyle.SIMPLE,
